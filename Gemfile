@@ -2,12 +2,21 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.8'
+gem 'ordinary_cms', github: 'max-konin/ordinary_cms'
+gem 'mercury-rails', github: 'jejacks0n/mercury'
+
+
+gem 'activeadmin', github: 'gregbell/active_admin', ref: '65aae6b68e78aad3071b2f85242b19fd3fccf426'
+gem 'activeadmin-mongoid', github: 'elia/activeadmin-mongoid', branch: 'rails4'
+gem 'activeadmin-sortable'
+gem 'activeadmin_images'
+gem 'activeadmin_tinymce', '~>0.2.2'
 
 gem 'mongoid'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
-
+gem 'slim-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
