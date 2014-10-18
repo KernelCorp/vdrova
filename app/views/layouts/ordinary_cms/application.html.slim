@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    title Vdrova
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  body
+    #main_container
+      .container_border
+        .left_main_column
+          a.logo href='/'
+            = image_tag 'logo2.png', alt: 'logo'
+          ul.menu-left
+            li: a href='#' Уголь
+            li: a href='#' Брикеты
+            li: a href='#' Дрова
+            li: a href='#' Контакты
+
+        .right_main_column
+          #header
+            .block_2
+            .block_2
+              .text_line
+                span.title> Тел:
+                | (+371) 2044-0033
+              .text_line
+                span.title> Тел:
+                | (+371) 2844-0033
+            .block_2
+              .text_line Экспорт :
+              .text_line
+                span.title> Тел:
+                | (+371) 277-277-02
+
+          .content
+            == yield
+        .clear_fix
+      #footer_spacer
+      #footer
+        .copyright
+          span &copy; 1970 - 2014 Vdrova
