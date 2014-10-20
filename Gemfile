@@ -5,7 +5,7 @@ gem 'rails', '4.0.8'
 gem 'ordinary_cms'
 gem 'mercury-rails', github: 'jejacks0n/mercury'
 
-
+gem 'mongoid-paperclip', require: 'mongoid_paperclip'
 gem 'activeadmin', github: 'gregbell/active_admin', ref: '65aae6b68e78aad3071b2f85242b19fd3fccf426'
 gem 'activeadmin-mongoid', github: 'elia/activeadmin-mongoid', branch: 'rails4'
 gem 'activeadmin-sortable'
