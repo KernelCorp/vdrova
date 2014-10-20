@@ -11,10 +11,12 @@ html
           a.logo href='/'
             = image_tag 'logo2.png', alt: 'logo'
           ul.menu-left
-            li: a href='#' Уголь
-            li: a href='#' Брикеты
-            li: a href='#' Дрова
-            li: a href='#' Контакты
+            - get_pages.each do |page|
+              li
+                a class=('active' if @page.slug == page.slug) href="/pages/#{page.slug}" = page.name
+            li
+              a class=('active' if @page.slug == 'contacts')  href="/pages/contacts" Контакты
+
 
         .right_main_column
           #header
@@ -38,4 +40,8 @@ html
       #footer_spacer
       #footer
         .copyright
-          span &copy; 1970 - 2014 Vdrova
+          span &copy; 2010 - 2014 Vdrova
+          .design
+            ' Разработка
+            a href='kerweb.ru' Kernel web
+        .footer_back_line

@@ -15,13 +15,14 @@ div.container
   width: 87%
 
 #main_container
-  background-color: #fff
   margin: 0 auto
   min-height: 100%
   position: relative
   width: 960px
   .container_border
-    padding: 0 10px
+    background-color: #fff
+    border-radius: 0 0 10px 10px
+    padding: 0 10px 20px
 
     .left_main_column
       color: #fff
@@ -66,6 +67,31 @@ div.container
 
       .content
         padding-left: 20px
+
+        .quot_block
+          padding-top: 20px
+          .quot_text
+            background: asset_url('quot_start.png') left 3px no-repeat, asset_url('quot_end.png') right bottom no-repeat
+            color: #888
+            display: inline-block
+            font-size: 13px
+            font-style: italic
+            line-height: 19px
+            padding: 0 0 25px 35px
+            margin-right: 25px
+            vertical-align: top
+            width: 460px - 35px - 25px
+          .quot_image
+            display: inline-block
+            text-align: right
+            vertical-align: top
+            width: 270px
+        h1
+          border-bottom: 1px dotted #CF512C
+          color: #281A17
+          font-size: 30px
+          font-style: italic
+          padding-bottom: 5px
     .clear_fix
       clear:  both
 #header
@@ -89,10 +115,10 @@ div.container
 
 
 #footer_spacer
-  padding-top: 60px
+  padding-top: 80px
 
 #footer
-  background-color: #fff // for test, overwrite in inherited file
+  background-color: transparent // for test, overwrite in inherited file
   bottom: 0
   box-sizing: border-box
   height: 40px // footer height, overwrite in inherited file
@@ -107,6 +133,14 @@ div.container
     margin: 0
     padding: 0
 
+  .footer_back_line
+    background-color: rgba(0,0,0, 0.3)
+    bottom: 0
+    border-radius: 8px 8px 0 0
+    padding-top: 8px
+    position: absolute
+    width: 100%
+
   .copyright
     box-sizing: border-box
     padding-bottom: 10px
@@ -115,11 +149,42 @@ div.container
     bottom: 0
     width: 100%
 
+    .design
+      color: #888
+      position: absolute
+      right: 10px
+      bottom: 10px
+
 a
   border-bottom: 1px solid transparent
+  color: #3481B2
   text-decoration: none
-  &:hover
-    border-bottom-color: #0000ff
+  &:hover,
+  &:visited:hover
+    color: #1F648F
+    border-bottom-color: #1F648F
+
+img
+  max-width: 100%
+  max-height: 100%
+
+table
+  border-collapse: collapse
+  thead
+    th
+      background-color: #F6F6D5
+      border: 1px solid #C8C7C7
+      color: #A41100
+      padding: 3px 5px
+  tbody
+    td
+      border: 1px solid #C8C7C7
+      padding: 3px 5px
+    td
+      &.light
+        background-color: #FFFF9A
+      &.center
+        text-align: center
 
 
 // --------------- HELPERS ---------------

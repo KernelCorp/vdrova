@@ -1,0 +1,12 @@
+h1 Контакты
+.page_content.contacts
+  p = @page.section('info').render
+  p
+    span.title> Адрес:
+    = @page.section('address').render
+  p
+    span.title> Телефон:
+    = @page.section('phone').render
+  p
+    span.title> E-mail:
+    = @page.section('email').render
