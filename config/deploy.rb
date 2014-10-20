@@ -4,8 +4,8 @@ require 'bundler/capistrano' # Для работы bundler. При измене�
 # require 'whenever/capistrano' # built-in Capistrano recipe for easy crontab updates with deploys
 
 
-set :application, 'vdrove'
-set :site_domain, 'vdrove.ru/'
+set :application, 'vdrova'
+set :site_domain, 'vdrova.ru/'
 set :rails_env, 'production'
 set :user, 'mkonin'
 #set :domain, 'mkonin@137.117.230.217'
@@ -22,7 +22,7 @@ set :rvm_ruby_string, 'ruby-2.1.1'
 set :whenever_command, 'bundle exec whenever'
 
 set :scm, :git
-set :repository, 'https://github.com/KernelCorp/vdrove.git'
+set :repository, 'https://github.com/KernelCorp/vdrova.git'
 set :branch, 'master' # Ветка из которой будем тянуть код для деплоя.
 set :deploy_via, :remote_cache # Указание на то, что стоит хранить кеш репозитария локально и с каждым деплоем лишь подтягивать произведенные изменения. Очень актуально для больших и тяжелых репозитариев.
 
