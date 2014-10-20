@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.8'
-gem 'ordinary_cms', github: 'max-konin/ordinary_cms'
+gem 'ordinary_cms'
 gem 'mercury-rails', github: 'jejacks0n/mercury'
 
 
@@ -70,7 +70,7 @@ end
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
