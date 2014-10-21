@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Vdrova
+    title Натопим дом: уголь в пакетах, дрова, брикеты с доставкой в Новосибирске
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = csrf_meta_tags
   body
@@ -9,7 +9,7 @@ html
       .container_border
         .left_main_column
           a.logo href='/'
-            = image_tag 'logo2.png', alt: 'logo'
+            = image_tag 'natopimdom_logo_white.png', alt: 'logo'
           ul.menu-left
             - get_pages.each do |page|
               li
@@ -23,25 +23,23 @@ html
             .block_2
             .block_2
               .text_line
-                span.title> Тел:
-                | (+371) 2044-0033
+                span.title> Офис:
+                | (+383) 111-11-11
               .text_line
-                span.title> Тел:
-                | (+371) 2844-0033
-            .block_2
-              .text_line Экспорт :
-              .text_line
-                span.title> Тел:
-                | (+371) 277-277-02
+                span.title> Доставка:
+                | +7 913 111-11-11
+            /.block_2
+            /  .text_line Экспорт :
+            /  .text_line
+            /    span.title> Тел:
+            /    | (+371) 277-277-02
 
           .content
             == yield
         .clear_fix
-      #footer_spacer
+      /#footer_spacer
       #footer
         .copyright
-          span &copy; 2010 - 2014 Vdrova
+          span © Copyright 2013-#{Time.now.year} | Натопим дом. All rights reserved.
           .design
-            ' Разработка
-            a href='kerweb.ru' Kernel web
-        .footer_back_line
+            a href='http://kerweb.ru' target='blank' Студия разработки Kernel Web
