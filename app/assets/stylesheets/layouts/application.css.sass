@@ -4,7 +4,7 @@ html, body
   padding: 0
 
 body
-  background: asset_url('background.jpg') 0 0 repeat
+  background: asset_url('natopimdom_bg.jpg') top center no-repeat
   color: #222
   font-family: 'trebuchet ms', arial, verdana, tahoma, sans-serif
   font-size: 13px
@@ -20,9 +20,8 @@ div.container
   position: relative
   width: 960px
   .container_border
-    background-color: #fff
-    border-radius: 0 0 10px 10px
-    padding: 0 10px 20px
+    background-color: rgba(255,255,255,0.8)
+    padding-bottom: 60px
 
     .left_main_column
       color: #fff
@@ -34,7 +33,7 @@ div.container
         color: #fff
         display: block
         height: 244px
-        width: 190px
+        padding: 10px
         &:hover
           border-color: transparent
       ul.menu-left
@@ -63,7 +62,7 @@ div.container
 
     .right_main_column
       float: left
-      width: 750px
+      width: 770px
 
       .content
         padding-left: 20px
@@ -72,7 +71,7 @@ div.container
           padding-top: 20px
           .quot_text
             background: asset_url('quot_start.png') left 3px no-repeat, asset_url('quot_end.png') right bottom no-repeat
-            color: #888
+            color: black
             display: inline-block
             font-size: 13px
             font-style: italic
@@ -105,10 +104,10 @@ div.container
   .block_2
     display: inline-block
     font-size: 18px
-    line-height: 28px
-    padding-top: 5px
+    line-height: 25px
+    padding: 0px 0 5px 500px
     vertical-align: top
-    width: 220px
+    text-align: right
 
     span.title
       font-size: 14px
@@ -118,10 +117,10 @@ div.container
   padding-top: 80px
 
 #footer
-  background-color: transparent // for test, overwrite in inherited file
+  background-color: rgba(0,0,0,0.8) // for test, overwrite in inherited file
   bottom: 0
   box-sizing: border-box
-  height: 40px // footer height, overwrite in inherited file
+  height: 30px // footer height, overwrite in inherited file
   position: absolute
   width: 100%
 
@@ -142,10 +141,11 @@ div.container
     width: 100%
 
   .copyright
+    color: #888888
     box-sizing: border-box
-    padding-bottom: 10px
+    padding: 0 0px 10px 10px
     position: absolute
-    text-align: center
+    text-align: left
     bottom: 0
     width: 100%
 
@@ -156,13 +156,11 @@ div.container
       bottom: 10px
 
 a
-  border-bottom: 1px solid transparent
-  color: #3481B2
+  color: #888888
   text-decoration: none
   &:hover,
   &:visited:hover
-    color: #1F648F
-    border-bottom-color: #1F648F
+    border-bottom: 1px dotted #888888
 
 img
   max-width: 100%
