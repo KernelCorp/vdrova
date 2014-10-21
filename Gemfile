@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.8'
-gem 'ordinary_cms'
+gem 'ordinary_cms', '~> 0.4.2'
 gem 'mercury-rails', github: 'jejacks0n/mercury'
 
 gem 'mongoid-paperclip', require: 'mongoid_paperclip'
