@@ -1,3 +1,10 @@
+- quot_content = @page.section('quot_text')
+- quot_content = quot_content.content unless quot_content.nil?
+- unless quot_content.nil? or quot_content.empty?
+  .quot_block
+    .quot_text  = @page.section('quot_text').render
+    .quot_image = @page.section('quot_img').render
+
 h1 = @page.name
 
 .page_content = @page.section('body').render
