@@ -1,0 +1,8 @@
+= simple_form_for :order, action: 'create', url: '/orders', remote: true,
+  html:{class: 'order_form', id: 'new_order', 'data-type' => 'JSON'} do |f|
+  .inputs
+    = f.input :username, label: false, placeholder: 'имя'
+    = f.input :phone, label: false, placeholder: 'телефон'
+    = f.input :text, label: false, placeholder: 'сообщение', required: false
+  .actions
+    = f.submit 'Заказать'

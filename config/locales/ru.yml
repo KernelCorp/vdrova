@@ -1,0 +1,34 @@
+ru:
+  will_paginate:
+    next_label: Следующая страница
+    previous_label: Предыдущая страница
+    page_gap: ...
+
+
+  active_admin:
+    dashboard: Главная страница
+
+  attributes:
+    created_at: Дата создания
+    updated_at: Дата изменения
+
+  mongoid: &mongoid
+    models:
+      orders:
+        one: Заявки
+        few: Заявки
+        many: Заявки
+        other: Заявки
+
+
+    attributes:
+      orders:
+        username: имя
+        phone: телефон
+        text: сообщение
+
+    errors:
+      messages:
+        blank: не может быть пустым
+
+  activerecord: *mongoid

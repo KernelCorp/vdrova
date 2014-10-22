@@ -108,9 +108,29 @@ div.container
     display: inline-block
     font-size: 18px
     line-height: 25px
-    padding: 0px 0 5px 500px
-    vertical-align: top
+    padding-top: 5px
     text-align: right
+    vertical-align: top
+    width: 220px
+
+    .order_button
+      color: #FFF
+      background: #AD1700 linear-gradient(#BF1900, #B51800 45%, #8C1200)
+      border: none
+      border-radius: 5px
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px -1px 0px rgba(0, 0, 0, 0.18) inset
+      cursor: pointer
+      margin-top: 12px
+      padding: 5px 18px
+      text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.3)
+      &:hover
+        background: #B41800 linear-gradient(#AB1600, #BA1800 45%, #9B1400)
+      &:active
+        box-shadow: 0px 1px 0px rgba(225, 225, 225, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.3) inset
+        background: #C11900 linear-gradient(#B51800, #BF1900 45%, #C91A00)
+      &:focus
+        outline: none
+
 
     span.title
       font-size: 14px

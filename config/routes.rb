@@ -3,5 +3,6 @@ Vdrova::Application.routes.draw do
   mount Mercury::Engine => '/'
   mount OrdinaryCms::Engine => '/'
   ActiveAdmin.routes(self)
+  resource :orders, only: :create
   resources :pages, only: :show
 end

@@ -3,6 +3,7 @@ html
   head
     title Натопим дом: уголь в пакетах, дрова, брикеты с доставкой в Новосибирске
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag 'application', "data-turbolinks-track" => true
     = csrf_meta_tags
   body
     #main_container
@@ -28,6 +29,8 @@ html
               .text_line
                 span.title> Доставка:
                 | +7 913 111-11-11
+            .block_2
+              button.order_button Заказать звонок
             /.block_2
             /  .text_line Экспорт :
             /  .text_line
@@ -37,6 +40,7 @@ html
           .content
             == yield
         .clear_fix
+      = render partial: 'ordinary_cms/pages/order_popup'
       #footer_spacer
       #footer
         .copyright
