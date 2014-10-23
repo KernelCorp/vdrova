@@ -8,3 +8,8 @@
 h1 = @page.name
 
 .page_content = @page.section('body').render
+
+#new_order_block_2
+ p Для заказа звонка заполните форму
+ .result_block
+ = render partial: 'orders/form'
