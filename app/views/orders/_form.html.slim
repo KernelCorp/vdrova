@@ -3,6 +3,6 @@
   .inputs
     = f.input :username, label: false, placeholder: 'имя'
     = f.input :phone, label: false, placeholder: 'телефон'
-    = f.input :text, label: false, placeholder: 'сообщение', required: false
+    = f.input :text, as: :text, label: false, placeholder: 'сообщение', required: false
   .actions
     = f.submit 'Заказать'
