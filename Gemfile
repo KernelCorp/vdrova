@@ -5,6 +5,9 @@ gem 'rails', '4.0.8'
 gem 'ordinary_cms', '~> 0.4.2'
 gem 'mercury-rails', github: 'jejacks0n/mercury'
 
+gem 'rails-i18n', '~> 4.0.0'
+gem 'russian'
+
 gem 'mongoid-paperclip', require: 'mongoid_paperclip'
 gem 'activeadmin', github: 'gregbell/active_admin', ref: '65aae6b68e78aad3071b2f85242b19fd3fccf426'
 gem 'activeadmin-mongoid', github: 'elia/activeadmin-mongoid', branch: 'rails4'
