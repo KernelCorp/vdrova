@@ -1,0 +1,45 @@
+- quot_content = @page.section('quot_text')
+- quot_content = quot_content.content unless quot_content.nil?
+- unless quot_content.nil? or quot_content.empty?
+  .quot_block
+    .quot_text  = @page.section('quot_text').render
+    .quot_image = @page.section('quot_img').render
+
+h1 Угольные брикеты
+.h2 преимущества наших угольных брикетов
+.features_block
+  .feature
+    .img_block
+      = image_tag '/system/images/brikets/01-fire.png'
+    .text Долгое и <br> равномерное  <br> горение
+  .feature
+    .img_block
+      = image_tag '/system/images/brikets/02-money.png'
+    .text Доступная <br> цена
+  .feature
+    .img_block
+      = image_tag '/system/images/brikets/03-clear.png'
+    .text Без дыма, <br> без искр
+  .feature
+    .img_block
+      = image_tag '/system/images/brikets/04-eco.png'
+    .text Экологически <br> чистый продукт
+  .feature
+    .img_block
+      = image_tag '/system/images/brikets/05-kamin.png'
+    .text Идеально подходит <br> для камина
+
+.delimiter
+
+.page_content
+  .info_table = @page.section('body').render
+
+  .bag_example
+    = image_tag '/system/images/brikets/bag.png'
+    .price = @page.section('price').render
+
+
+#new_order_block_2
+ p Для заказа звонка заполните форму
+ .result_block
+ = render partial: 'orders/form'

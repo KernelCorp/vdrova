@@ -1,0 +1,36 @@
+- quot_content = @page.section('quot_text')
+- quot_content = quot_content.content unless quot_content.nil?
+- unless quot_content.nil? or quot_content.empty?
+  .quot_block
+    .quot_text  = @page.section('quot_text').render
+    .quot_image = @page.section('quot_img').render
+
+h1 Дрова
+.h2 преимущества наших дров
+.features_block
+  .feature
+    .img_block
+      = image_tag '/system/images/brikets/05-kamin.png'
+    .text Идеально подходит <br> для камина
+  .feature
+    .img_block
+      = image_tag '/system/images/drova/02-vlajnost.png'
+    .text Влажность дров <br> не превышает 25%
+  .feature
+    .img_block
+      = image_tag '/system/images/drova/03-economy.png'
+    .text Существенная <br> экономия <br> электроэнергии
+
+.delimiter
+
+.page_content
+  .info_table = @page.section('body').render
+
+  .bag_example
+    = image_tag '/system/images/drova/bag.png'
+    .price = @page.section('price').render
+
+#new_order_block_2
+ p Для заказа звонка заполните форму
+ .result_block
+ = render partial: 'orders/form'

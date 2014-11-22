@@ -1,12 +1,14 @@
+@import "fonts/zopa"
+
 html, body
   height: 100%
   margin: 0
   padding: 0
 
 body
-  background: asset_url('natopimdom_bg.jpg') top center no-repeat
+  background: fixed asset_url('natopimdom_bg.jpg') top center no-repeat
   color: #222
-  font-family: 'trebuchet ms', arial, verdana, tahoma, sans-serif
+  font-family: 'Segoe UI', arial, verdana, tahoma, sans-serif
   font-size: 13px
 
 
@@ -48,9 +50,9 @@ div.container
 
         a
           border-bottom: 1px dotted #ECB577
-          color: #ECB577
+          color: #fff
           display: block
-          font-size: 14px
+          font-size: 18px
           font-weight: bold
           text-shadow: -1px -1px 1px #961101
           padding: 5px 5px 5px 10px
@@ -76,7 +78,8 @@ div.container
             background: asset_url('quot_start.png') left 3px no-repeat, asset_url('quot_end.png') right bottom no-repeat
             color: black
             display: inline-block
-            font-size: 13px
+            font-family: Tahoma
+            font-size: 14px
             font-style: italic
             line-height: 19px
             padding: 0 0 25px 35px
@@ -91,9 +94,17 @@ div.container
         h1
           border-bottom: 1px dotted #CF512C
           color: #281A17
-          font-size: 30px
+          font-family: 'Segoe UI'
+          font-size: 32px
           font-style: italic
           padding-bottom: 5px
+
+        .h2
+          color: #c3270b
+          font-family: 'Segoe UI'
+          font-size: 20px
+          text-transform: uppercase
+          margin-bottom: 10px
     .clear_fix
       clear:  both
 #header
@@ -106,6 +117,7 @@ div.container
 
   .block_2
     display: inline-block
+    font-family: Tahoma
     font-size: 18px
     line-height: 25px
     padding-top: 5px
@@ -191,24 +203,86 @@ img
 
 table
   border-collapse: collapse
-  thead
-    th
-      background-color: #F6F6D5
-      border: 1px solid #C8C7C7
-      color: #A41100
-      padding: 3px 5px
-  tbody
-    td
-      border: 1px solid #C8C7C7
-      padding: 3px 5px
-    td
-      &.light
-        background-color: #FFFF9A
-      &.center
-        text-align: center
+  text-align: center
+  th
+    background-color: #c3270b
+    border: 1px solid #000
+    color: #fff
+    padding: 8px 5px
+  td
+    background-color: #fff
+    border: 1px solid #000
+    padding: 8px 5px
+
+
+.features_block
+  text-align: center
+  .feature
+    display: inline-block
+    margin-bottom: 20px
+    vertical-align: top
+    width: 250px
+    .img_block
+      position: relative
+      vertical-align: bottom
+    .text
+      color: #c3270b
+      font-size: 16px
+      padding-top: 10px
+
+.page_content
+  .info_table
+    display: inline-block
+    margin-right: 18px
+    vertical-align: top
+    width: 490px
+    table
+      width: 100%
+  .bag_example
+    display: inline-block
+    padding-right: 20px
+    vertical-align: top
+    width: 222px
+
+    .price
+      color: #c3270b
+      font-family: 'zopacyr'
+      font-size: 30px
+      text-align: center
+
+    .price1,
+    .price2
+      color: #c3270b
+      font-family: 'zopacyr'
+      font-size: 30px
+      display: inline-block
+      text-align: right
+      width: 100px
+
+.page_content
+  .contacts
+    display: inline-block
+    padding-right: 10px
+    vertical-align: top
+    width: 295px
+
+    .row
+      padding-bottom: 20px
+
+    div.section
+      display: inline-block
+  .the_map
+    display: inline-block
+    vertical-align: top
+    width: 445px
+
 
 
 // --------------- HELPERS ---------------
+
+.delimiter
+  border-top: 1px dotted #000
+  margin: 20px 0 40px
 
 .text-center
   text-align: center

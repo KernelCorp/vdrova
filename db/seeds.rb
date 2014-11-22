@@ -21,25 +21,31 @@ if text_page.valid?
 
   page = text_page.build(name: 'Уголь')
   page.section('quot_text').content = 'Уголь был первым из используемых человеком видов ископаемого топлива. Он позволил совершить промышленную революцию, которая в свою очередь способствовала развитию угольной промышленности, обеспечив её более современной технологией.'
-  page.section('quot_img').content = '<img src="/system/images/ughol.png">'
+  page.section('quot_img').content = '<img src="/system/images/ughol/ughol.png">'
+  page.section('body').content ='<table><thead><tr><th>Марка</th><th>Код</th><th>Название</th><th>Теплота <br>ккал/кг</th><th>Фракция <br>мм</th></tr></thead><tbody><tr><td>Длиннопламянный</td><td>код</td><td>орех</td><td>6400 6900</td><td>25-50</td></tr></tbody></table>'
+  page.sections.build(name: 'price', content: '150 р.')
+  page.sections.build(name: 'price2', content: '250 р.')
   page.save
 
   page = text_page.build(name: 'Брикеты')
   page.section('quot_text').content = 'Продукт произведенный из натуральной угольной пыли, без химических добавок и склеивающих веществ с использованием инновационной технологии брикетирования.'
-  page.section('quot_img').content = '<img src="/system/images/briket.png">'
+  page.section('quot_img').content = '<img src="/system/images/brikets/briket.png">'
+  page.section('body').content ='<table><thead><tr><th>Наименование</th><th>Вес упаковки</th><th>Теплота <br>ккал/кг</th><th>Зольность <br>%</th></tr></thead><tbody><tr><td>Длиннопламянный</td><td>орех</td><td>6400 6900</td><td>25-50</td></tr></tbody></table>'
+  page.sections.build(name: 'price', content: '150 р.')
   page.save
 
   page = text_page.build(name: 'Дрова')
   page.section('quot_text').content = 'Дерево – один из самых древних и экологически чистых видов топлива. Солнечная энергия накапливается в древесине, а затем дрова отдают ее в виде тепла. Дрова активно используются для отопления домов, бань, а также как экологическое топливо для каминов. Запах, который они дают нельзя ни с чем спутать - приятный аромат горящей древесины, еле слышное потрескивание мгновенно создают атмосферу покоя и уюта.'
-  page.section('quot_img').content = '<img src="/system/images/drova.png">'
+  page.section('quot_img').content = '<img src="/system/images/drova/drova.png">'
+  page.section('body').content ='<table><thead><tr><th>Дерево</th><th>Рассыпной<br>м3</th><th>1 Ящик</th><th>1 Сетка</th></tr></thead><tbody><tr><td>Длиннопламянный</td><td>орех</td><td>6400</td><td>25-50</td></tr></tbody></table>'
+  page.sections.build(name: 'price', content: '150 р.')
   page.save
 end
 
 contacts = OrdinaryCms::Page.create name: 'contacts'
 if contacts.valid?
-  contacts.sections.build(name: 'info')
-  contacts.sections.build(name: 'address')
-  contacts.sections.build(name: 'phone')
-  contacts.sections.build(name: 'email')
+  contacts.sections.build(name: 'address', content: 'Новосибирск, Бердское шоссе, 151')
+  contacts.sections.build(name: 'phone', content: '+7-999-999-99-99')
+  contacts.sections.build(name: 'email', content: 'drova@yandex.ru')
   contacts.save
 end

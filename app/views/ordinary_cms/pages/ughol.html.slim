@@ -1,0 +1,45 @@
+- quot_content = @page.section('quot_text')
+- quot_content = quot_content.content unless quot_content.nil?
+- unless quot_content.nil? or quot_content.empty?
+  .quot_block
+    .quot_text  = @page.section('quot_text').render
+    .quot_image = @page.section('quot_img').render
+
+h1 Каменный уголь
+.h2 преимущества нашего каменного угля в мешках
+.features_block
+  .feature
+    .img_block
+      = image_tag '/system/images/ughol/01-cool-pack.png'
+    .text Удобная упаковка <br> предохраняет уголь от <br> намокания и смерзания
+  .feature
+    .img_block
+      = image_tag '/system/images/ughol/02-heat.png'
+    .text Дает <br> МНОГО ТЕПЛА
+  .feature
+    .img_block
+      = image_tag '/system/images/ughol/03-useful.png'
+    .text Просто <br> транспортировать <br> и разгружать
+  .feature
+    .img_block
+      = image_tag '/system/images/ughol/04-weight.png'
+    .text Гарантируем <br> точный вес
+  .feature
+    .img_block
+      = image_tag '/system/images/ughol/05-gotov.png'
+    .text Уголь подготовлен <br> по фракции и составу
+
+.delimiter
+
+.page_content
+  .info_table = @page.section('body').render
+
+  .bag_example
+    = image_tag '/system/images/ughol/bag.png'
+    .price1 = @page.section('price').render
+    .price2 = @page.section('price2').render
+
+#new_order_block_2
+ p Для заказа звонка заполните форму
+ .result_block
+ = render partial: 'orders/form'
