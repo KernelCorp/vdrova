@@ -20,7 +20,7 @@
   padding: 35px
   position: fixed
   top: 50px
-  width: 420px
+  width: 470px
   z-index: 3
   .close
     cursor: pointer
@@ -32,8 +32,7 @@
     background: asset_url('close_exit.png') no-repeat scroll 0% 0% transparent
 
 .form
-  .result_block
-    margin-bottom: 15px
+
 
   input[type="tel"],
   input[type="text"],
@@ -46,10 +45,10 @@
     border: 1px solid #a0a0a0
     font-family: Arial, sans-serif
     font-size: 16px
-    width: 400px
+    width: 452px
     height: 30px
   textarea
-    height: 100px
+    height: 104px
 
 
   .field_error input,
@@ -67,6 +66,7 @@
     margin-top: 12px
     padding: 5px 18px
     text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.3)
+    text-transform: uppercase
     &:hover
       background: #B41800 linear-gradient(#AB1600, #BA1800 45%, #9B1400)
     &:active
@@ -76,3 +76,22 @@
       outline: none
     &[disabled]
       cursor: not-allowed
+
+.order_background
+  background: url('/system/images/call_center.png') right bottom no-repeat
+  min-height: 440px
+  margin-bottom: -60px
+
+  .result_block
+    font-size: 18px
+    margin-bottom: 15px
+
+  [type="submit"]
+    border: 5px solid rgb(178,178,178)
+    border-radius: 10px
+    box-shadow: none
+    font-size: 20px
+    font-weight: bold
+    margin-left: 101px
+    padding: 15px 20px
+

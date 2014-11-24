@@ -14,9 +14,9 @@ html
           ul.menu-left
             - get_pages.each do |page|
               li
-                a class=('active' if @page.slug == page.slug) href="/pages/#{page.slug}" = page.name
+                a class=('active' if @page && @page.slug == page.slug) href="/pages/#{page.slug}" = page.name
             li
-              a class=('active' if @page.slug == 'contacts')  href="/pages/contacts" Контакты
+              a class=('active' if @page && @page.slug == 'contacts')  href="/pages/contacts" Контакты
 
 
         .right_main_column

@@ -1,4 +1,5 @@
 @import "fonts/zopa"
+@import "fonts/segoeui"
 
 html, body
   height: 100%
@@ -9,7 +10,7 @@ body
   background: fixed asset_url('natopimdom_bg.jpg') top center no-repeat
   color: #222
   font-family: 'Segoe UI', arial, verdana, tahoma, sans-serif
-  font-size: 13px
+  font-size: 16px
 
 
 div.container
@@ -91,22 +92,28 @@ div.container
             text-align: right
             vertical-align: top
             width: 270px
-        h1
-          border-bottom: 1px dotted #CF512C
-          color: #281A17
-          font-family: 'Segoe UI'
-          font-size: 32px
-          font-style: italic
-          padding-bottom: 5px
-
-        .h2
-          color: #c3270b
-          font-family: 'Segoe UI'
-          font-size: 20px
-          text-transform: uppercase
-          margin-bottom: 10px
     .clear_fix
       clear:  both
+
+.order_button
+  color: #FFF
+  background: #AD1700 linear-gradient(#BF1900, #B51800 45%, #8C1200)
+  border: none
+  border-radius: 5px
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px -1px 0px rgba(0, 0, 0, 0.18) inset
+  cursor: pointer
+  margin-top: 12px
+  padding: 5px 18px
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.3)
+  &:hover
+    background: #B41800 linear-gradient(#AB1600, #BA1800 45%, #9B1400)
+  &:active
+    box-shadow: 0px 1px 0px rgba(225, 225, 225, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.3) inset
+    background: #C11900 linear-gradient(#B51800, #BF1900 45%, #C91A00)
+  &:focus
+    outline: none
+  &.big
+    font-size: 20px
 #header
   background-color: #c3270b // for test, overwrite in inherited file
   border-radius: 0 0 10px 0
@@ -125,23 +132,7 @@ div.container
     vertical-align: top
     width: 220px
 
-    .order_button
-      color: #FFF
-      background: #AD1700 linear-gradient(#BF1900, #B51800 45%, #8C1200)
-      border: none
-      border-radius: 5px
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px -1px 0px rgba(0, 0, 0, 0.18) inset
-      cursor: pointer
-      margin-top: 12px
-      padding: 5px 18px
-      text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.3)
-      &:hover
-        background: #B41800 linear-gradient(#AB1600, #BA1800 45%, #9B1400)
-      &:active
-        box-shadow: 0px 1px 0px rgba(225, 225, 225, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.3) inset
-        background: #C11900 linear-gradient(#B51800, #BF1900 45%, #C91A00)
-      &:focus
-        outline: none
+
 
 
     span.title
@@ -189,6 +180,30 @@ div.container
       position: absolute
       right: 10px
       bottom: 10px
+
+h1
+  border-bottom: 1px dotted #CF512C
+  color: #281A17
+  font-family: 'Segoe UI'
+  font-size: 32px
+  font-style: italic
+  padding-bottom: 5px
+
+.h2
+  color: #c3270b
+  font-family: 'Segoe UI'
+  font-size: 26px
+  text-transform: uppercase
+  margin-bottom: 10px
+
+.h2_dashed
+  border-bottom: 2px dashed #c3270b
+  color: #c3270b
+  font-family: 'Segoe UI'
+  font-size: 24px
+  padding: 20px 0
+  text-transform: uppercase
+  margin-bottom: 30px
 
 a
   color: #888888
@@ -264,17 +279,17 @@ table
     display: inline-block
     padding-right: 10px
     vertical-align: top
-    width: 295px
+    width: 305px
 
     .row
-      padding-bottom: 20px
+      padding-bottom: 10px
 
     div.section
       display: inline-block
   .the_map
     display: inline-block
     vertical-align: top
-    width: 445px
+    width: 435px
 
 
 

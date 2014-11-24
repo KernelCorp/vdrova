@@ -30,7 +30,4 @@ h1 Дрова
     = image_tag '/system/images/drova/bag.png'
     .price = @page.section('price').render
 
-#new_order_block_2
- p Для заказа звонка заполните форму
- .result_block
- = render partial: 'orders/form'
+= link_to 'Для заказа жмите на кнопку', '/orders/new', class: 'order_button big'

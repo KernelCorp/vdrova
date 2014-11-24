@@ -39,7 +39,4 @@ h1 Каменный уголь
     .price1 = @page.section('price').render
     .price2 = @page.section('price2').render
 
-#new_order_block_2
- p Для заказа звонка заполните форму
- .result_block
- = render partial: 'orders/form'
+= link_to 'Для заказа жмите на кнопку', '/orders/new', class: 'order_button big'
