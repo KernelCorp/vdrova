@@ -10,23 +10,23 @@ h1 Угольные брикеты
 .features_block
   .feature
     .img_block
-      = image_tag '/system/images/brikets/01-fire.png'
+      = image_tag 'brikets/01-fire.png'
     .text Долгое и <br> равномерное  <br> горение
   .feature
     .img_block
-      = image_tag '/system/images/brikets/02-money.png'
+      = image_tag 'brikets/02-money.png'
     .text Доступная <br> цена
   .feature
     .img_block
-      = image_tag '/system/images/brikets/03-clear.png'
+      = image_tag 'brikets/03-clear.png'
     .text Без дыма, <br> без искр
   .feature
     .img_block
-      = image_tag '/system/images/brikets/04-eco.png'
+      = image_tag 'brikets/04-eco.png'
     .text Экологически <br> чистый продукт
   .feature
     .img_block
-      = image_tag '/system/images/brikets/05-kamin.png'
+      = image_tag 'drova/05-kamin.png'
     .text Идеально подходит <br> для камина
 
 .delimiter
@@ -35,7 +35,7 @@ h1 Угольные брикеты
   .info_table = @page.section('body').render
 
   .bag_example
-    = image_tag '/system/images/brikets/bag.png'
+    = image_tag 'brikets/bag_brikets.png'
     .price = @page.section('price').render
 
 = link_to 'Для заказа жмите на кнопку', '/orders/new', class: 'order_button big'

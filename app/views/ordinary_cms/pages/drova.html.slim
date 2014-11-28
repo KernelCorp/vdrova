@@ -10,15 +10,15 @@ h1 Дрова
 .features_block
   .feature
     .img_block
-      = image_tag '/system/images/brikets/05-kamin.png'
+      = image_tag 'drova/05-kamin.png'
     .text Идеально подходит <br> для камина
   .feature
     .img_block
-      = image_tag '/system/images/drova/02-vlajnost.png'
+      = image_tag 'drova/02-vlajnost.png'
     .text Влажность дров <br> не превышает 25%
   .feature
     .img_block
-      = image_tag '/system/images/drova/03-economy.png'
+      = image_tag 'drova/03-economy.png'
     .text Существенная <br> экономия <br> электроэнергии
 
 .delimiter
@@ -27,7 +27,7 @@ h1 Дрова
   .info_table = @page.section('body').render
 
   .bag_example
-    = image_tag '/system/images/drova/bag.png'
+    = image_tag 'drova/bag_drova.png'
     .price = @page.section('price').render
 
 = link_to 'Для заказа жмите на кнопку', '/orders/new', class: 'order_button big'
