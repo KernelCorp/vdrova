@@ -12,13 +12,12 @@ if root.valid?
 end
 
 
-text_page = OrdinaryCms::Factories::Page.find_or_create_by name: 'text_page'
+text_page = OrdinaryCms::Factories::Page.find_or_initialize_by name: 'text_page'
 if text_page.new_record?
   text_page.sections.build(name: 'body')
   text_page.sections.build(name: 'quot_text')
   text_page.sections.build(name: 'quot_img')
   text_page.save
-
 end
 
 page = text_page.pages.where(name: 'Уголь').first || text_page.build(name: 'Уголь')
@@ -44,7 +43,7 @@ if page.section('price').nil?
 end
 page.save
 
-page = text_page.pages.where(name: 'Брикеты').first || text_page.build(name: 'Дрова')
+page = text_page.pages.where(name: 'Дрова').first || text_page.build(name: 'Дрова')
 if page.new_record?
   page.section('quot_text').content = 'Дерево – один из самых древних и экологически чистых видов топлива. Солнечная энергия накапливается в древесине, а затем дрова отдают ее в виде тепла. Дрова активно используются для отопления домов, бань, а также как экологическое топливо для каминов. Запах, который они дают нельзя ни с чем спутать - приятный аромат горящей древесины, еле слышное потрескивание мгновенно создают атмосферу покоя и уюта.'
   page.section('quot_img').content = '<img src="/system/images/drova/drova.png">'
